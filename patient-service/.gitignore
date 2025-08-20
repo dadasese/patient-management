@@ -1,0 +1,307 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# ==================================================
+# Java Microservices Project .gitignore
+# ==================================================
+
+# ===== JAVA BUILD ARTIFACTS =====
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+!gradle-wrapper.properties
+
+# ===== COMPILED JAVA =====
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ===== IDE FILES =====
+# IntelliJ IDEA
+*.iml
+*.iws
+*.ipr
+.idea/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ===== SPRING BOOT =====
+# Spring Boot specific
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+
+# ===== DATABASE =====
+# H2 Database files
+*.db
+*.trace.db
+*.lock.db
+*.mv.db
+
+# SQLite
+*.sqlite
+*.sqlite3
+
+# Derby
+derby.log
+metastore_db/
+
+# Database migration temp files
+*.tmp.sql
+
+# ===== DOCKER =====
+# Docker override files
+docker-compose.override.yml
+.docker/
+.dockerignore.bak
+
+# Docker volumes (if accidentally created locally)
+postgres-data/
+kafka-data/
+zookeeper-data/
+
+# ===== KAFKA =====
+# Kafka logs (if running locally without Docker)
+kafka-logs/
+zookeeper/
+transaction-logs/
+
+# ===== GRPC / PROTOBUF =====
+# Generated protobuf files (if you want to regenerate them)
+**/generated-sources/
+**/*_pb2.py
+**/*_pb2_grpc.py
+
+# ===== TESTING =====
+# Test reports
+test-output/
+test-results/
+**/TEST-*.xml
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+jacoco.exec
+jacoco-it.exec
+
+# ===== LOGGING =====
+*.log
+*.log.*
+logs/
+log/
+application.log*
+spring.log*
+
+# ===== SECURITY & CREDENTIALS =====
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# AWS credentials
+.aws/
+aws-credentials.json
+
+# JWT keys
+*.pem
+*.key
+jwtRS256.key*
+application-secrets.yml
+
+# Kubernetes secrets
+*-secret.yaml
+secrets/
+
+# ===== OPERATING SYSTEM =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.#*
+#*#
+
+# ===== MONITORING & METRICS =====
+# Actuator dumps
+heapdump.hprof
+threaddump.txt
+
+# JProfiler
+*.jprofiler
+
+# YourKit
+*.ykp
+
+# ===== CLOUD & DEPLOYMENT =====
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+
+# CloudFormation
+*.template.json
+aws-deploy.sh
+
+# LocalStack
+.localstack/
+localstack-persist/
+
+# ===== DOCUMENTATION =====
+# Generated docs (keep source docs)
+/docs/generated/
+*.pdf
+**/target/generated-docs/
+
+# ===== NODE.JS (if using for frontend/tooling) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+
+# ===== MICROSERVICE SPECIFIC =====
+# Service discovery files
+consul-data/
+eureka-data/
+
+# Config server
+config-repo-local/
+application-local.yml
+application-dev.yml
+!**/src/main/resources/application-dev.yml.example
+
+# Gateway cache
+gateway-cache/
+
+# Circuit breaker dumps
+hystrix-dashboard/
+
+# ===== INTEGRATION TESTS =====
+# TestContainers
+.testcontainers/
+testcontainers-ryuk.log
+
+# Integration test data
+integration-test-data/
+test-reports/
+
+# ===== CUSTOM EXCLUSIONS =====
+# Add your project-specific files here
+# Example:
+# custom-config/
+# temp-scripts/
+
+# ===== KEEP THESE FILES =====
+# Important: Use ! to keep essential files that might match patterns above
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+!.gitkeep
+!application.yml.example
+!docker-compose.yml.example
